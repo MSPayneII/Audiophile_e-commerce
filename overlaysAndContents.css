@@ -1,0 +1,340 @@
+/*
+=============== 
+Hamburger Menu and Menu Overlay
+===============
+*/
+
+.menu-overlay,
+.confirmation-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: var(--transition);
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.menu-overlay.show {
+  display: block;
+}
+
+.menu {
+  width: 100%;
+  height: 90%;
+  background-color: var(--clr-light-grey);
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  padding-top: 8rem;
+  margin-top: 0rem;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    height: 50%;
+  }
+}
+
+/*
+=============== 
+Confirmation Modal and Overlay
+===============
+*/
+
+.confirmation-overlay.show {
+  opacity: 1;
+  z-index: 1;
+  display: grid;
+}
+
+.confirmation-modal {
+  position: relative;
+  top: 8rem;
+  right: 0;
+  left: 0;
+  width: 20.4375rem;
+  margin: 0 auto;
+  background: var(--clr-light-grey);
+  border-radius: var(--radius);
+  padding: 2.375rem 1.75rem 0 1.75rem;
+  transition: var(--transition);
+  overflow: auto;
+}
+
+.confirmation-modal footer {
+  margin-bottom: 1.9375rem;
+}
+
+.confirmation-items-container {
+  display: grid;
+  align-items: center;
+  background-color: var(--clr-grey);
+  padding: 1rem 1.5rem 0 1.5rem;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  margin-bottom: 0;
+}
+
+.confirmation-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.confirmation-image {
+  margin-bottom: 1.625rem;
+}
+
+.confirmation-thank-you {
+  color: var(--clr-jet-black);
+  font-size: var(--ft-h5);
+  font-weight: 700;
+  line-height: 1.75rem;
+  letter-spacing: 0.05375rem;
+  width: 16.4375rem;
+  margin-bottom: 1.9375rem;
+}
+
+.confirmation-text {
+  color: var(--clr-dark-grey);
+  font-size: var(--ft-body);
+  font-weight: 500;
+  line-height: 1.5625rem;
+  margin-bottom: 1.9375rem;
+}
+
+.confirmation-items-total-container {
+  display: grid;
+  align-items: flex-end;
+  background-color: var(--clr-lighter-black);
+  padding-top: 1.3125rem;
+  padding-bottom: 1.5625rem;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  margin-bottom: 1.4375rem;
+}
+
+.confirmation-list-control {
+  display: grid;
+  place-items: center;
+}
+
+.confirmation-divider-line {
+  width: 100%;
+  height: 0.0625rem;
+  background-color: var(--clr-dark-grey);
+  border: none;
+  opacity: 0.4;
+  margin-bottom: 1.1875rem;
+}
+
+.confirmation-total-header {
+  color: var(--clr-dark-grey);
+  font-size: var(--ft-body);
+  font-weight: 500;
+  line-height: 1.5625rem;
+  text-transform: uppercase;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.confirmation-total {
+  color: var(--clr-white);
+  font-size: var(--ft-h6);
+  font-weight: 700;
+  padding-left: 1.5rem;
+}
+
+.additional-items {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .confirmation-modal {
+    position: fixed;
+    width: 35.75rem;
+    padding: 2.53rem 2.75rem 0 2.75rem;
+  }
+
+  .middle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2.875rem;
+  }
+
+  .confirmation-image {
+    margin-bottom: 2.4375rem;
+  }
+
+  .confirmation-thank-you {
+    font-size: var(--ft-h3);
+    line-height: 2.25rem;
+    letter-spacing: 0.07125rem;
+    width: 18.75rem;
+    margin-bottom: 2.25rem;
+  }
+  .confirmation-text {
+    margin-bottom: 2.3125rem;
+  }
+
+  .confirmation-items-container {
+    border-top-right-radius: 0;
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    margin-bottom: 0;
+  }
+  .confirmation-items-total-container {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    padding-top: 0;
+    padding-bottom: 3.5625rem;
+    margin-bottom: 0;
+  }
+}
+
+/*
+=============== 
+Cart and Cart Overlay
+===============
+*/
+
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: var(--transition);
+  display: none;
+}
+.cart-overlay.show {
+  display: block;
+  /* z-index: 1; */
+}
+
+.cart {
+  position: fixed;
+  top: 8rem;
+  right: 0;
+  left: 0;
+  width: 20.4375rem;
+  margin: 0 auto;
+  background: var(--clr-light-grey);
+  border-radius: var(--radius);
+  padding: 2.375rem 1.75rem 0 1.75rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  transition: var(--transition);
+  overflow: auto;
+}
+
+.cart header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.3rem;
+}
+
+.cart-title {
+  color: var(--clr-jet-black);
+  font-size: var(--ft-h6);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.081rem;
+}
+
+.cart-items {
+  margin-bottom: 2.4375rem;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.cart-item:last-child {
+  margin-bottom: 0rem;
+}
+
+.cart-item-image {
+  width: 4rem;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+
+.cart-item-name {
+  color: var(--clr-jet-black);
+  font-size: var(--ft-body);
+  font-weight: 700;
+  line-height: 1.5625rem;
+}
+.cart-item-price {
+  color: var(--clr-dark-grey);
+  font-size: var(--ft-overline);
+  font-weight: 700;
+  line-height: 1.5625rem;
+}
+
+.cart-quantity-selector.quantity-selector {
+  height: 2rem;
+  width: 6rem;
+}
+
+.cart footer {
+  margin-bottom: 1.9375rem;
+}
+
+.cart footer div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.9375rem;
+}
+
+.cart-total-header {
+  color: var(--clr-dark-grey);
+  font-size: var(--ft-body);
+  font-weight: 500;
+  line-height: 1.5625rem;
+  text-transform: uppercase;
+}
+
+.cart-total {
+  color: var(--clr-jet-black);
+  font-size: var(--ft-h6);
+  font-weight: 700;
+}
+
+.cart-checkout-btn {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .cart {
+    right: 3rem;
+    left: auto;
+    width: 23.5625rem;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cart {
+    right: 7.5rem;
+  }
+}
+@media screen and (min-width: 1438px) {
+  .cart {
+    right: 10.5rem;
+  }
+}
