@@ -14,6 +14,7 @@ Build the e-commerce website and get it looking as close as possible to the desi
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What I learned](#what-I-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
 
@@ -57,9 +58,13 @@ Users can:
 - CSS Grid
 - Mobile-first workflow
 
+### What-I-learned
+
+Building this website with vanilla JS was a fun challenge that took a lot of mental gymnastics (e.g., cart functionality). One glaring observation is there was a lot of unavoidable copy and pasting between HTML pages (navbar, footer, etc.). If I were to build version 2, I'd go with ReactJS to reduce the repetition via components.
+
 ### Continued development
 
-I realized that my form validation skills need more improvement, so I want to gain more understanding and experience with form validation to make it more robust and scalable for future projects.
+While building the checkout form and its functionality, I realized that my form validation skills needed improvement. In general, I want to gain more understanding and experience with form validation to make it more robust and scalable for future projects.
 
 ## Author
 
