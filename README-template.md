@@ -48,8 +48,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ec2bea06-86c2-4aef-b5b9-c8524500949f/deploy-status)](https://app.netlify.com/sites/audiophile-ecommerce-mspayneii/deploys)
+
+- Solution URL: [https://github.com/MSPayneII/audiophile_ecommerce](https://your-solution-url.com)
+- Live Site URL: [https://audiophile-ecommerce-mspayneii.netlify.app/](https://your-live-site-url.com)
 
 ## My process
 
