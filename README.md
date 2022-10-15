@@ -58,7 +58,7 @@ Users can:
 - CSS Grid
 - Mobile-first workflow
 
-### What-I-learned
+### What I learned
 
 Building this website with vanilla JS was a fun challenge that took a lot of mental gymnastics (e.g., cart functionality). One glaring observation is there was a lot of unavoidable copy and pasting between HTML pages (navbar, footer, etc.). If I were to build version 2, I'd go with ReactJS to reduce the repetition via components.
 
