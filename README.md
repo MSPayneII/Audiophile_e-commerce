@@ -44,7 +44,7 @@ Users can:
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ec2bea06-86c2-4aef-b5b9-c8524500949f/deploy-status)](https://app.netlify.com/sites/audiophile-ecommerce-mspayneii/deploys)
 
-- Solution URL: [https://github.com/MSPayneII/audiophile_ecommerce](https://github.com/MSPayneII/audiophile_ecommerce)
+- Solution URL: [https://github.com/MSPayneII/Audiophile_e-commerce](https://github.com/MSPayneII/Audiophile_e-commerce)
 - Live Site URL: [https://audiophile-ecommerce-mspayneii.netlify.app/](https://audiophile-ecommerce-mspayneii.netlify.app/)
 
 ## My process
