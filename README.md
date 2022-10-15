@@ -1,4 +1,4 @@
-# Frontend Mentor - Audiophile e-commerce website challenge solution
+# Frontend Mentor - Audiophile e-commerce website
 
 This is a multi-page e-commerce website built with a vanilla JavaScript-heavy approach utilizing a local data.json file for its products. The website is a solution to the [Audiophile e-commerce website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx).
 
