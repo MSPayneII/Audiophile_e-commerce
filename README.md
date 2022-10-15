@@ -1,6 +1,10 @@
-# Frontend Mentor - Audiophile e-commerce website solution
+# Frontend Mentor - Audiophile e-commerce website challenge solution
 
-This is a solution to the [Audiophile e-commerce website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a multi-page e-commerce website built with a vanilla JavaScript-heavy approach utilizing a local data.json file for its products. The website is a solution to the [Audiophile e-commerce website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx).
+
+## Goal
+
+Build the e-commerce website and get it looking as close as possible to the designs provided.
 
 ## Table of contents
 
@@ -10,7 +14,6 @@ This is a solution to the [Audiophile e-commerce website challenge on Frontend M
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
 
@@ -18,7 +21,7 @@ This is a solution to the [Audiophile e-commerce website challenge on Frontend M
 
 ### The challenge
 
-Users should be able to:
+Users can:
 
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
@@ -49,35 +52,14 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
+- Javascript
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
 
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
 ### Continued development
 
-I realized that my form validation skills need more improvement, so I want to gain more understanding and experience with form validation to make it more robust and scalable.
+I realized that my form validation skills need more improvement, so I want to gain more understanding and experience with form validation to make it more robust and scalable for future projects.
 
 ## Author
 
