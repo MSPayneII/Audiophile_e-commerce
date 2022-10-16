@@ -16,3 +16,7 @@ toggleCartBtn.addEventListener("click", () => {
     body.classList.add("no-scroll");
   }
 });
+
+export const openCart = () => {
+  cartOverlay.classList.add("show");
+};

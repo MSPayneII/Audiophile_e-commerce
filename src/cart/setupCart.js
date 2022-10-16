@@ -8,6 +8,7 @@ import {
 
 import { findProduct } from "../store.js";
 import addToCartDOM from "./addToCartDOM.js";
+import { openCart } from "./toggleCart.js";
 
 let cart = getStorageItem("cart");
 
@@ -36,6 +37,7 @@ export const addToCart = (productSlug, productQuantity) => {
     const newAmount = items.find((value) => value.dataset.id === productSlug);
     // console.log(newAmount);
     newAmount.textContent = amount;
+    openCart();
   }
 
   // add one to the item count
