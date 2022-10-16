@@ -37,7 +37,6 @@ export const addToCart = (productSlug, productQuantity) => {
     const newAmount = items.find((value) => value.dataset.id === productSlug);
     // console.log(newAmount);
     newAmount.textContent = amount;
-    openCart();
   }
 
   // add one to the item count
@@ -48,6 +47,7 @@ export const addToCart = (productSlug, productQuantity) => {
   setStorageItem("cart", cart);
   // checks cart items length handles checkout btn
   cartBtnCheck();
+  openCart();
 };
 
 function displayCartItemCount() {
