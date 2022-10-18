@@ -54,8 +54,8 @@ Confirmation Modal and Overlay
 }
 
 .confirmation-modal {
-  position: relative;
-  top: 8rem;
+  position: fixed;
+  top: 5rem;
   right: 0;
   left: 0;
   width: 20.4375rem;
@@ -161,7 +161,8 @@ Confirmation Modal and Overlay
 
 @media screen and (min-width: 768px) {
   .confirmation-modal {
-    position: fixed;
+    /* position: fixed; */
+    top: 8rem;
     width: 35.75rem;
     padding: 2.53rem 2.75rem 0 2.75rem;
   }
