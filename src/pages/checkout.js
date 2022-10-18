@@ -76,7 +76,7 @@ const init = () => {
               />
 
               <div>
-                <h4 class="summary-item-name">${name}</h4>
+                <h3 class="summary-item-name">${name}</h3>
                 <p class="summary-item-price">${formatPrice(price)}</p>
               </div>
 
