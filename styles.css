@@ -23,7 +23,7 @@ Variables
   --clr-light-grey: #fafafa;
   --clr-dark-grey: #979797;
   --clr-white: #fff;
-  --clr-red: #ef0c0c;
+  --clr-red: #cd2c2c;
 
   /* Typography */
   --type-manrope: "Manrope", sans-serif;
@@ -178,11 +178,12 @@ header {
 }
 
 .confirmation-list-control-btn {
-  color: var(--clr-dark-grey);
+  color: var(--clr-jet-black);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.013rem;
   margin-bottom: 1.75rem;
+  opacity: 0.5;
 }
 
 .btn-full-width {
@@ -533,13 +534,13 @@ Product Categories
 }
 
 .category-page-link {
-  color: var(--clr-dark-grey);
+  color: var(--clr-jet-black);
   text-transform: uppercase;
   font-size: var(--ft-subTitle);
   font-weight: 700;
   letter-spacing: 0.0625rem;
   margin-right: 0.8125rem;
-  opacity: 0.9;
+  opacity: 0.5;
   transition: var(--transition);
 }
 .category-page-link:hover {
@@ -864,11 +865,20 @@ Promotion
 .promotion-body,
 .footer-body,
 .copyright {
-  color: var(--clr-dark-grey);
   font-size: var(--ft-body);
   font-weight: 500;
   line-height: 1.5625rem;
   margin-bottom: 7.75rem;
+}
+
+.promotion-body {
+  color: var(--clr-jet-black);
+  opacity: 0.5;
+}
+
+.footer-body,
+.copyright {
+  color: var(--clr-dark-grey);
 }
 
 @media screen and (min-width: 768px) {
@@ -1172,13 +1182,14 @@ Category Page
 }
 
 .product-preview-body {
-  color: var(--clr-dark-grey);
+  color: var(--clr-jet-black);
   font-size: var(--ft-body);
   font-weight: 500;
   min-width: 20.4375rem;
   max-width: 24.4375rem;
   line-height: 1.5625rem;
   margin-bottom: 1.9375rem;
+  opacity: 0.5;
 }
 
 @media screen and (min-width: 768px) {

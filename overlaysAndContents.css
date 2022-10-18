@@ -64,7 +64,8 @@ Confirmation Modal and Overlay
   border-radius: var(--radius);
   padding: 2.375rem 1.75rem 0 1.75rem;
   transition: var(--transition);
-  overflow: auto;
+  max-height: 100%;
+  overflow-y: auto;
 }
 
 .confirmation-modal footer {
@@ -104,11 +105,12 @@ Confirmation Modal and Overlay
 }
 
 .confirmation-text {
-  color: var(--clr-dark-grey);
+  color: var(--clr-jet-black);
   font-size: var(--ft-body);
   font-weight: 500;
   line-height: 1.5625rem;
   margin-bottom: 1.9375rem;
+  opacity: 0.5;
 }
 
 .confirmation-items-total-container {
@@ -281,10 +283,11 @@ Cart and Cart Overlay
   line-height: 1.5625rem;
 }
 .cart-item-price {
-  color: var(--clr-dark-grey);
+  color: var(--clr-jet-black);
   font-size: var(--ft-overline);
   font-weight: 700;
   line-height: 1.5625rem;
+  opacity: 0.5;
 }
 
 .cart-quantity-selector.quantity-selector {
@@ -303,11 +306,12 @@ Cart and Cart Overlay
 }
 
 .cart-total-header {
-  color: var(--clr-dark-grey);
+  color: var(--clr-jet-black);
   font-size: var(--ft-body);
   font-weight: 500;
   line-height: 1.5625rem;
   text-transform: uppercase;
+  opacity: 0.5;
 }
 
 .cart-total {

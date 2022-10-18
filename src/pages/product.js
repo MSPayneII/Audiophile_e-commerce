@@ -86,7 +86,7 @@ const init = () => {
       //   console.log(placement[key]);
       return `<img
             src="${url}"
-            alt="${name}"
+            alt="${name}-${key}"
             class="gallery-${key}"
             />`;
     })

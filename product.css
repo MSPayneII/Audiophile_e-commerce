@@ -5,13 +5,14 @@ Product Description section
 */
 
 .go-back-btn {
-  color: var(--clr-dark-grey);
+  color: var(--clr-jet-black);
   font-size: var(--ft-body);
   font-weight: 500;
   text-transform: capitalize;
   line-height: 1.5625rem;
   padding: 1rem 0;
   margin-bottom: 0.5rem;
+  opacity: 0.5;
   cursor: pointer;
   transition: var(--transition);
 }
@@ -50,12 +51,13 @@ Product Description section
 }
 
 .product-body {
-  color: var(--clr-dark-grey);
+  color: var(--clr-jet-black);
   font-size: var(--ft-body);
   font-weight: 500;
   min-width: 20.4375rem;
   line-height: 1.5625rem;
   margin-bottom: 2rem;
+  opacity: 0.5;
 }
 
 .product-price {
@@ -82,10 +84,11 @@ Product Description section
 
 .decrease-quantity,
 .increase-quantity {
-  color: var(--clr-dark-grey);
+  color: var(--clr-jet-black);
   font-size: var(--ft-subTitle);
   font-weight: 400;
   cursor: pointer;
+  opacity: 0.25;
 }
 .decrease-quantity:hover,
 .increase-quantity:hover {
@@ -205,10 +208,11 @@ Product Feature section
 }
 
 .product-feature-body {
-  color: var(--clr-dark-grey);
+  color: var(--clr-jet-black);
   font-size: var(--ft-body);
   font-weight: 500;
   line-height: 1.5625rem;
+  opacity: 0.5;
   /* max-width: 20.4375rem; */
   width: 100%;
 }
@@ -290,8 +294,9 @@ Product in-the-box section
 }
 
 .box-item-name {
-  color: var(--clr-dark-grey);
+  color: var(--clr-jet-black);
   font-weight: 500;
+  opacity: 0.5;
 }
 
 @media screen and (min-width: 768px) {

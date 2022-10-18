@@ -123,11 +123,12 @@ label {
 }
 
 .cash-delivery-text {
-  color: var(--clr-dark-grey);
+  color: var(--clr-jet-black);
   font-size: var(--ft-body);
   font-weight: 500;
   line-height: 1.5625rem;
   width: 100%;
+  opacity: 0.5;
 }
 
 .cash-on-delivery-info-section {
@@ -276,10 +277,11 @@ Summary
 }
 .summary-item-price,
 .confirmation-item-price {
-  color: var(--clr-dark-grey);
+  color: var(--clr-jet-black);
   font-size: var(--ft-overline);
   font-weight: 700;
   line-height: 1.5625rem;
+  opacity: 0.5;
 }
 
 .summary footer {
@@ -292,11 +294,12 @@ Summary
 }
 
 .summary-subheader {
-  color: var(--clr-dark-grey);
+  color: var(--clr-jet-black);
   font-size: var(--ft-body);
   font-weight: 500;
   line-height: 1.5625rem;
   text-transform: uppercase;
+  opacity: 0.5;
 }
 
 .subheader-total {
@@ -307,11 +310,12 @@ Summary
 
 .summary-item-number,
 .confirmation-item-number {
-  color: var(--clr-dark-grey);
+  color: var(--clr-jet-black);
   font-size: var(--ft-body);
   font-weight: 700;
   line-height: 1.5625rem;
   margin-bottom: 1.5rem;
+  opacity: 0.5;
 }
 
 .grand {
