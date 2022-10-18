@@ -52,7 +52,7 @@ const init = () => {
               />
 
               <div>
-                <h4 class="confirmation-item-name">${name}</h4>
+                <h3 class="confirmation-item-name">${name}</h3>
                 <p class="confirmation-item-price">${formatPrice(price)}</p>
               </div>
 

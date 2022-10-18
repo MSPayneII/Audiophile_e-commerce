@@ -44,7 +44,7 @@ const display = (products, element) => {
             <div class="product-preview-image-container">
               <img
                 src="${image}"
-                alt=${name}
+                alt="${name}"
                 class="product-preview-image"
               />
             </div>

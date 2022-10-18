@@ -26,7 +26,7 @@ const addToCartDOM = (product) => {
               />
 
               <div>
-                <h4 class="cart-item-name">${name}</h4>
+                <h3 class="cart-item-name">${name}</h3>
                 <p class="cart-item-price">${formatPrice(price)}</p>
               </div>
 
