@@ -1,4 +1,7 @@
-import { imageSelectorBasedOnViewport } from "../src/utils.js";
+import {
+  imageSelectorBasedOnViewport,
+  addLineBreakToProductName,
+} from "../src/utils.js";
 
 const display = (products, element) => {
   // function to display products associated with a category.
@@ -14,28 +17,7 @@ const display = (products, element) => {
 
       let { name } = product;
 
-      let nameWithLineBreaks;
-      // allow me to add line breaks to the name value based on which product it is
-      switch (name) {
-        case "YX1 Wireless Earphones":
-          nameWithLineBreaks = "YX1 Wireless<br/> Earphones";
-          break;
-        case "XX59 Headphones":
-          nameWithLineBreaks = "XX59<br/> Headphones";
-          break;
-        case "XX99 Mark I Headphones":
-          nameWithLineBreaks = "XX99 Mark I<br/> Headphones";
-          break;
-        case "XX99 Mark II Headphones":
-          nameWithLineBreaks = "XX99 Mark II<br/> Headphones";
-          break;
-        case "ZX7 Speaker":
-          nameWithLineBreaks = "ZX7<br/> Speaker";
-          break;
-        case "ZX9 Speaker":
-          nameWithLineBreaks = "ZX9<br/> Speaker";
-          break;
-      }
+      let nameWithLineBreaks = addLineBreakToProductName(name);
 
       // if isNew is truthy, the product will display the "new product" overline. If falsy, the overline will not be displayed.
       let newProduct = isNew ? `<p class="overline">new product</p>` : "";

@@ -9,7 +9,7 @@ import {
   getStorageItem,
   formatPrice,
   getElement,
-  updateProductNamePresentation,
+  abbreviatedProductName,
 } from "../utils.js";
 
 import {
@@ -22,7 +22,6 @@ import {
 } from "../form.js";
 
 // select elements
-// const continuePayBtn = getElement(".continue-to-pay-btn");
 const goBackBtn = getElement(".go-back-btn");
 const summaryItems = getElement(".summary-items");
 const initialTotal = getElement(".initial-total");
@@ -40,7 +39,6 @@ const zipcode = getElement("#zipcode");
 const city = getElement("#city");
 const country = getElement("#country");
 const eMoneyRadio = getElement("#e-money");
-// const cashRadio = getElement("#cash");
 const eMoneyNumber = getElement("#e-money-number");
 const eMoneyPin = getElement("#e-money-pin");
 
@@ -65,7 +63,7 @@ const init = () => {
 
       let cartImage = `./src${image["mobile"].slice(1)}`;
 
-      name = updateProductNamePresentation(name);
+      name = abbreviatedProductName(name);
 
       return `
   <article class="summary-item">

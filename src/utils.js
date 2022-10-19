@@ -56,7 +56,7 @@ const productImageSelector = () => {
   return viewPort;
 };
 
-const updateProductNamePresentation = (productName) => {
+const abbreviatedProductName = (productName) => {
   // This function abbreviates the product name from the data file
 
   switch (productName) {
@@ -82,6 +82,31 @@ const updateProductNamePresentation = (productName) => {
   return productName;
 };
 
+const addLineBreakToProductName = (productName) => {
+  // Add line breaks to the product name based on which product it is
+  switch (productName) {
+    case "YX1 Wireless Earphones":
+      productName = "YX1 Wireless<br/> Earphones";
+      break;
+    case "XX59 Headphones":
+      productName = "XX59<br/> Headphones";
+      break;
+    case "XX99 Mark I Headphones":
+      productName = "XX99 Mark I<br/> Headphones";
+      break;
+    case "XX99 Mark II Headphones":
+      productName = "XX99 Mark II<br/> Headphones";
+      break;
+    case "ZX7 Speaker":
+      productName = "ZX7<br/> Speaker";
+      break;
+    case "ZX9 Speaker":
+      productName = "ZX9<br/> Speaker";
+      break;
+  }
+  return productName;
+};
+
 export {
   getElement,
   formatPrice,
@@ -89,5 +114,6 @@ export {
   setStorageItem,
   imageSelectorBasedOnViewport,
   productImageSelector,
-  updateProductNamePresentation,
+  abbreviatedProductName,
+  addLineBreakToProductName,
 };

@@ -3,7 +3,7 @@ import {
   getStorageItem,
   formatPrice,
   getElement,
-  updateProductNamePresentation,
+  abbreviatedProductName,
 } from "../src/utils.js";
 
 //select elements
@@ -41,7 +41,7 @@ const init = () => {
 
     let { name } = product;
 
-    name = updateProductNamePresentation(name);
+    name = abbreviatedProductName(name);
 
     return `
   <article class="confirmation-item">

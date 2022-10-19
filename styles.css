@@ -118,7 +118,6 @@ header {
   font-weight: 700;
   line-height: 1.5625rem;
   letter-spacing: 0.0625rem;
-  /* padding: 1rem 1.875rem 1rem 2rem; */
   text-transform: uppercase;
   transition: var(--transition);
   border-color: transparent;
@@ -274,7 +273,6 @@ Navbar
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 2.25rem;
-  /* width: 88vw; */
 }
 
 .nav-links {
@@ -344,8 +342,6 @@ Hero
   height: 37.5rem;
   background: url(./src/assets/home/mobile/image-header.jpg) top/cover;
   background-repeat: no-repeat;
-  /* display: grid;
-  place-items: center; */
   color: var(--clr-white);
   background-size: 100% 100%;
   margin-top: -6rem;
@@ -609,7 +605,6 @@ Featured Products
   justify-content: flex-start;
   align-items: center;
   background-color: var(--clr-dark-tan);
-  /* min-width: 20.4375rem; */
   border-radius: var(--radius);
   background-image: url("./src/assets/home/desktop/pattern-circles.svg");
   background-repeat: no-repeat;
@@ -1087,13 +1082,11 @@ Footer
     display: flex;
     justify-content: space-between;
     width: 100%;
-    /* margin-bottom: 2.5rem; */
   }
   .footer-body {
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
     max-width: 33.75rem;
-    /* margin-bottom: 4.25rem; */
   }
   .footer-nav li:not(last-child) {
     margin-left: 2.25rem;

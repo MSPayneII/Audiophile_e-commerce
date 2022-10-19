@@ -10,19 +10,18 @@ import {
   formatPrice,
   imageSelectorBasedOnViewport,
   productImageSelector,
+  addLineBreakToProductName,
 } from "../utils.js";
 import { store } from "../store.js";
 
-// console.log("product page opened");
-
 // select elements
-// const loading = getElement(".page-loading");
 const goBackBtn = getElement(".go-back-btn");
 const productImageContainer = getElement(".product-image-container");
 const productTitle = getElement(".product-title");
 const productBody = getElement(".product-body");
 const productPrice = getElement(".product-price");
 const productQuantity = getElement(".quantity-number");
+const overline = getElement(".overline");
 const productQuantitySelector = getElement(".quantity-selector");
 const cartBtn = getElement(".add-to-cart-btn");
 const productFeature = getElement(".product-feature-body");
@@ -49,6 +48,7 @@ const init = () => {
     name,
     image,
     others,
+    new: isNew,
     price,
     slug,
   } = product;
@@ -57,6 +57,11 @@ const init = () => {
   let productImageSrc = `./src${image[productImageSelector()].slice(1)}`;
   let galleryArr = Array.of({ first }, { second }, { third });
 
+  // if isNew is truthy, the product will display the "new product" overline. If falsy, the overline will not be displayed.
+  let newProduct = isNew ? "new product" : "";
+
+  let nameWithLineBreaks = addLineBreakToProductName(name);
+
   //   set values
   document.title = `${name.toUpperCase()} | Audiophile`;
   productImageContainer.innerHTML = `<img
@@ -64,8 +69,9 @@ const init = () => {
                 alt="${name}"
                 class="product-image"
               />`;
-  productTitle.textContent = name;
+  productTitle.innerHTML = nameWithLineBreaks;
   productBody.textContent = description;
+  overline.textContent = newProduct;
   productPrice.textContent = formatPrice(price);
   productFeature.innerHTML = features.replaceAll("\n", "<br/>");
   boxList.innerHTML = includes
@@ -83,7 +89,6 @@ const init = () => {
         1
       )}`;
 
-      //   console.log(placement[key]);
       return `<img
             src="${url}"
             alt="${name}-${key}"

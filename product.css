@@ -213,7 +213,6 @@ Product Feature section
   font-weight: 500;
   line-height: 1.5625rem;
   opacity: 0.5;
-  /* max-width: 20.4375rem; */
   width: 100%;
 }
 
@@ -227,19 +226,12 @@ Product Feature section
     letter-spacing: 0.07125rem;
     margin-bottom: 2.75rem;
   }
-
-  /* .product-feature-body {
-    max-width: 43.0625rem;
-  } */
 }
 
 @media screen and (min-width: 1023px) {
   .features {
     margin-bottom: 6.56rem;
   }
-  /* .product-feature-body {
-    max-width: 49rem;
-  } */
 }
 
 @media screen and (min-width: 1338px) {
@@ -355,7 +347,6 @@ Product Gallery section
 
 @media screen and (min-width: 768px) {
   .product-gallery {
-    /* grid-template-columns: 17.3215rem 24.6875rem; */
     grid-template-columns: 1.4fr 2fr;
     grid-template-rows: repeat(2, 1fr);
     column-gap: 1.25rem;
@@ -382,7 +373,6 @@ Product Gallery section
 
 @media screen and (min-width: 1023px) {
   .product-gallery {
-    /* grid-template-columns: 19.3215rem 28rem; */
     row-gap: 1.25rem;
     margin-bottom: 7.94rem;
   }
@@ -390,7 +380,6 @@ Product Gallery section
 
 @media screen and (min-width: 1338px) {
   .product-gallery {
-    /* grid-template-columns: 27.8125rem 39.6875rem; */
     column-gap: 1.875rem;
     row-gap: 2rem;
     margin-bottom: 10.4375rem;
@@ -408,7 +397,6 @@ Recommendations section
   text-align: center;
 }
 .recommendation-products {
-  /* display: grid; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -425,7 +413,6 @@ Recommendations section
 }
 
 .recommendation-product-image {
-  /* width: 20.4375rem; */
   width: 100%;
   border-radius: var(--radius);
 }
@@ -440,11 +427,8 @@ Recommendations section
 
 @media screen and (min-width: 768px) {
   .recommendation-products {
-    /* display: grid; */
-    /* grid-template-columns: repeat(3, 13.9375rem); */
     flex-direction: row;
     row-gap: 0;
-    /* column-gap: 0.6875rem; */
     column-gap: 0.625rem;
   }
 
@@ -462,7 +446,6 @@ Recommendations section
 
 @media screen and (min-width: 1023px) {
   .recommendation-products {
-    /* grid-template-columns: repeat(3, 15.9375rem); */
     column-gap: 1.875rem;
   }
   .recommendation-product {
@@ -475,9 +458,7 @@ Recommendations section
     margin-bottom: 12rem;
   }
   .recommendation-products {
-    /* grid-template-columns: repeat(3, 21.875rem); */
     max-width: var(--max-width);
-    /* column-gap: 1.875rem; */
   }
 
   .recommendation-product {

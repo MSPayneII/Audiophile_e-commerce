@@ -1,8 +1,4 @@
-import {
-  formatPrice,
-  getElement,
-  updateProductNamePresentation,
-} from "../utils.js";
+import { formatPrice, getElement, abbreviatedProductName } from "../utils.js";
 
 const cartItems = getElement(".cart-items");
 
@@ -11,7 +7,7 @@ const addToCartDOM = (product) => {
 
   let { name } = product;
 
-  name = updateProductNamePresentation(name);
+  name = abbreviatedProductName(name);
 
   let cartImage = `./src${image["mobile"].slice(1)}`;
 
