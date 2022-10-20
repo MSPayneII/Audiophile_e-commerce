@@ -883,7 +883,8 @@ Promotion
     margin-bottom: 4.375rem;
   }
   .promotion-title {
-    line-height: 2.2rem;
+    font-size: var(--ft-h2);
+    line-height: 2.75rem;
     letter-spacing: 0.089rem;
   }
   .promotion-line-break {
@@ -912,9 +913,18 @@ Promotion
     background: url(./src/assets/shared/desktop/image-best-gear.jpg) center;
     background-size: 102%;
     margin-bottom: 0rem;
-    min-height: 25rem;
-    min-width: 23rem;
+    /* min-height: 25rem;
+    min-width: 23rem; */
+    min-height: 28.75rem;
+    min-width: 25.75rem;
     background-repeat: no-repeat;
+  }
+
+  .promotion-title {
+    font-size: var(--ft-h2);
+    line-height: 2.75rem;
+    letter-spacing: 0.089rem;
+    max-width: 100%;
   }
   .promotion-text {
     grid-column: 1;
@@ -944,7 +954,6 @@ Promotion
   }
   .promotion-title {
     line-height: 2.75rem;
-    max-width: 18rem;
   }
 
   .footer-body,
