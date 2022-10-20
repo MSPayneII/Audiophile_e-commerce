@@ -155,6 +155,11 @@ label {
   input {
     margin-bottom: 0;
   }
+
+  .form h1 {
+    font-size: var(--ft-h3);
+  }
+
   .form-address {
     grid-column: 1 / -1;
   }
